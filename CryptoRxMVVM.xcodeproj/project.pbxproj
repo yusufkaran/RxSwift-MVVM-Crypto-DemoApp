@@ -13,6 +13,8 @@
 		B54CE3532B00EB5D0007DB8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54CE3512B00EB5D0007DB8A /* Main.storyboard */; };
 		B54CE3552B00EB5D0007DB8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B54CE3542B00EB5D0007DB8A /* Assets.xcassets */; };
 		B54CE3582B00EB5D0007DB8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54CE3562B00EB5D0007DB8A /* LaunchScreen.storyboard */; };
+		B54CE3642B00EDFE0007DB8A /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54CE3632B00EDFE0007DB8A /* Crypto.swift */; };
+		B54CE3662B00EFFC0007DB8A /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B54CE3652B00EFFC0007DB8A /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B54CE3542B00EB5D0007DB8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B54CE3572B00EB5D0007DB8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B54CE3592B00EB5D0007DB8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B54CE3632B00EDFE0007DB8A /* Crypto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Crypto.swift; sourceTree = "<group>"; };
+		B54CE3652B00EFFC0007DB8A /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +60,49 @@
 		B54CE34A2B00EB5D0007DB8A /* CryptoRxMVVM */ = {
 			isa = PBXGroup;
 			children = (
-				B54CE34B2B00EB5D0007DB8A /* AppDelegate.swift */,
-				B54CE34D2B00EB5D0007DB8A /* SceneDelegate.swift */,
-				B54CE34F2B00EB5D0007DB8A /* ViewController.swift */,
+				B54CE3622B00ED610007DB8A /* Service */,
+				B54CE3612B00ED3B0007DB8A /* Model */,
+				B54CE3602B00ED320007DB8A /* ViewModel */,
+				B54CE35F2B00ED2D0007DB8A /* View */,
 				B54CE3512B00EB5D0007DB8A /* Main.storyboard */,
 				B54CE3542B00EB5D0007DB8A /* Assets.xcassets */,
 				B54CE3562B00EB5D0007DB8A /* LaunchScreen.storyboard */,
 				B54CE3592B00EB5D0007DB8A /* Info.plist */,
 			);
 			path = CryptoRxMVVM;
+			sourceTree = "<group>";
+		};
+		B54CE35F2B00ED2D0007DB8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B54CE34B2B00EB5D0007DB8A /* AppDelegate.swift */,
+				B54CE34D2B00EB5D0007DB8A /* SceneDelegate.swift */,
+				B54CE34F2B00EB5D0007DB8A /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B54CE3602B00ED320007DB8A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		B54CE3612B00ED3B0007DB8A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B54CE3632B00EDFE0007DB8A /* Crypto.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B54CE3622B00ED610007DB8A /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				B54CE3652B00EFFC0007DB8A /* Webservice.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +176,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B54CE3642B00EDFE0007DB8A /* Crypto.swift in Sources */,
 				B54CE3502B00EB5D0007DB8A /* ViewController.swift in Sources */,
 				B54CE34C2B00EB5D0007DB8A /* AppDelegate.swift in Sources */,
+				B54CE3662B00EFFC0007DB8A /* Webservice.swift in Sources */,
 				B54CE34E2B00EB5D0007DB8A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
